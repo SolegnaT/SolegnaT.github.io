@@ -1,0 +1,31 @@
+name: My workflow
+on: 
+  workflow_dispatch:
+    inputs:
+      mario-run-id:
+        required: true
+        type: string
+permissions:
+  contents: write
+jobs:
+  Mario-deploy-workflow:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "🎉"
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: mario_emscripten
+          github-token: ${{ secrets.PAT_mario_repo_read }}
+          repository: SolegnaT/mario
+          run-id: ${{ inputs.mario-run-id }}
+          path: emscripten
+#      - run: more mario_emscripten
+      - run: ls emscripten
+      - name: Commit update
+        run: |
+          git config --global user.name 'Angelos'
+          git config --global user.email 'SolegnaT@users.noreply.github.com'
+          git add -u
+          git commit -m "Update mario"
+          git push
