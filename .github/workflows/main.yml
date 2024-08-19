@@ -6,7 +6,7 @@ jobs:
     steps:
       - run: echo "🎉"
       - uses: actions/checkout@v4
-      - uses: actions/download-artifact
+      - uses: actions/download-artifact@v4
         with:
           name: mario_emscripten
       - run: more mario_emscripten
