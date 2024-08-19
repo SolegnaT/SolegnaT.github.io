@@ -5,6 +5,8 @@ on:
       mario-run-id:
         required: true
         type: string
+permissions:
+  contents: write
 jobs:
   Mario-deploy-workflow:
     runs-on: ubuntu-latest
