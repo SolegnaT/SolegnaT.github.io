@@ -19,7 +19,7 @@ jobs:
           run-id: ${{ inputs.mario-run-id }}
           path: emscripten
 #      - run: more mario_emscripten
-      - run: ls
+      - run: ls emscripten
       - name: Commit update
         run: |
           git config --global user.name 'Angelos'
