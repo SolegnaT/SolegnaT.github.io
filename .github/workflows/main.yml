@@ -9,5 +9,7 @@ jobs:
       - uses: actions/download-artifact@v4
         with:
           name: mario_emscripten
+          github-token: ${{ secrets.PAT_mario_read_repo }}
+          repository: SolegnaT/mario
       - run: more mario_emscripten
       # commit to repository
