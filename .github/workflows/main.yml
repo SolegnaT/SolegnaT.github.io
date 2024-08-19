@@ -1,8 +1,7 @@
-name: GitHub Actions Demo
-run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+name: My workflow
 on: [workflow_dispatch]
 jobs:
-  Explore-GitHub-Actions:
+  Mario-deploy-workflow:
     runs-on: ubuntu-latest
     steps:
       - run: echo "🎉"
