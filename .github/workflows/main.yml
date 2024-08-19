@@ -5,3 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "🎉"
+      - uses: actions/checkout@v4
+      # download file 
+      # commit to repository
