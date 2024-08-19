@@ -6,5 +6,8 @@ jobs:
     steps:
       - run: echo "🎉"
       - uses: actions/checkout@v4
-      # download file 
+      - uses: actions/download-artifact
+        with:
+          name: mario_emscripten
+      - run: more mario_emscripten
       # commit to repository
