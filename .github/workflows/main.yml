@@ -17,5 +17,11 @@ jobs:
           github-token: ${{ secrets.PAT_mario_repo_read }}
           repository: SolegnaT/mario
           run-id: ${{ inputs.mario-run-id }}
+          path: emscripten
 #      - run: more mario_emscripten
       - run: ls
+      - name: Commit update
+        run: |
+          git add -u
+          git commit -m "Update mario"
+          git push
