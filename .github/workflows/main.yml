@@ -17,5 +17,5 @@ jobs:
           github-token: ${{ secrets.PAT_mario_repo_read }}
           repository: SolegnaT/mario
           run-id: ${{ inputs.mario-run-id }}
-      - run: more mario_emscripten
-      # commit to repository
+#      - run: more mario_emscripten
+      - run: ls
