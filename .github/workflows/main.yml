@@ -11,7 +11,6 @@ jobs:
   Mario-deploy-workflow:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "🎉"
       - uses: actions/checkout@v4
       - uses: actions/download-artifact@v4
         with:
@@ -20,8 +19,6 @@ jobs:
           repository: SolegnaT/mario
           run-id: ${{ inputs.mario-run-id }}
           path: emscripten
-#      - run: more mario_emscripten
-      - run: ls emscripten
       - name: Commit update
         run: |
           git config --global user.name 'Angelos'
