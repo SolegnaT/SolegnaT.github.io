@@ -35,7 +35,7 @@ if (ENVIRONMENT_IS_NODE) {
 
 // --pre-jses are emitted after the Module integration code, so that they can
 // refer to Module (if they choose; they can also define Module)
-// include: /tmp/tmp8yqmndjr.js
+// include: /tmp/tmp516b0qd0.js
 
   Module['expectedDataFileDownloads'] ??= 0;
   Module['expectedDataFileDownloads']++;
@@ -145,12 +145,7 @@ var REMOTE_PACKAGE_SIZE = metadata['remote_package_size'];
       function assert(check, msg) {
         if (!check) throw msg + new Error().stack;
       }
-Module['FS_createPath']("/", "home", true, true);
-Module['FS_createPath']("/home", "runner", true, true);
-Module['FS_createPath']("/home/runner", "work", true, true);
-Module['FS_createPath']("/home/runner/work", "mario", true, true);
-Module['FS_createPath']("/home/runner/work/mario", "mario", true, true);
-Module['FS_createPath']("/home/runner/work/mario/mario", "assets", true, true);
+Module['FS_createPath']("/", "assets", true, true);
 
       /** @constructor */
       function DataRequest(start, end, audio) {
@@ -217,25 +212,25 @@ Module['FS_createPath']("/home/runner/work/mario/mario", "assets", true, true);
     }
 
     }
-    loadPackage({"files": [{"filename": "/home/runner/work/mario/mario/assets/Ac437_IBM_VGA_8x16.ttf", "start": 0, "end": 25824}, {"filename": "/home/runner/work/mario/mario/assets/NES - Super Mario Bros - Enemies & Bosses.png", "start": 25824, "end": 75136}, {"filename": "/home/runner/work/mario/mario/assets/NES - Super Mario Bros - Mario & Luigi.png", "start": 75136, "end": 149241}, {"filename": "/home/runner/work/mario/mario/assets/NES - Super Mario Bros - Tileset.png", "start": 149241, "end": 225019}, {"filename": "/home/runner/work/mario/mario/assets/button_right.png", "start": 225019, "end": 246379}, {"filename": "/home/runner/work/mario/mario/assets/button_up.png", "start": 246379, "end": 267663}, {"filename": "/home/runner/work/mario/mario/assets/button_up.xcf", "start": 267663, "end": 451162}, {"filename": "/home/runner/work/mario/mario/assets/button_up_2.xcf", "start": 451162, "end": 960257}, {"filename": "/home/runner/work/mario/mario/assets/lets-a-go.wav", "start": 960257, "end": 1037465, "audio": 1}, {"filename": "/home/runner/work/mario/mario/assets/mk64_mario01.wav", "start": 1037465, "end": 1117945, "audio": 1}, {"filename": "/home/runner/work/mario/mario/assets/music.mp3", "start": 1117945, "end": 4513396, "audio": 1}, {"filename": "/home/runner/work/mario/mario/assets/numbers.png", "start": 4513396, "end": 4515981}, {"filename": "/home/runner/work/mario/mario/assets/numbers.xcf", "start": 4515981, "end": 4535989}, {"filename": "/home/runner/work/mario/mario/assets/numbers_eight.xcf", "start": 4535989, "end": 4538257}, {"filename": "/home/runner/work/mario/mario/assets/numbers_five.xcf", "start": 4538257, "end": 4540397}, {"filename": "/home/runner/work/mario/mario/assets/numbers_four.xcf", "start": 4540397, "end": 4542684}, {"filename": "/home/runner/work/mario/mario/assets/numbers_nine.xcf", "start": 4542684, "end": 4544889}, {"filename": "/home/runner/work/mario/mario/assets/numbers_one.xcf", "start": 4544889, "end": 4547029}, {"filename": "/home/runner/work/mario/mario/assets/numbers_seven.xcf", "start": 4547029, "end": 4549189}, {"filename": "/home/runner/work/mario/mario/assets/numbers_six.xcf", "start": 4549189, "end": 4551369}, {"filename": "/home/runner/work/mario/mario/assets/numbers_three.xcf", "start": 4551369, "end": 4553597}, {"filename": "/home/runner/work/mario/mario/assets/numbers_three_2.xcf", "start": 4553597, "end": 4556288}, {"filename": "/home/runner/work/mario/mario/assets/numbers_two.xcf", "start": 4556288, "end": 4558447}, {"filename": "/home/runner/work/mario/mario/assets/numbers_zero.xcf", "start": 4558447, "end": 4560789}, {"filename": "/home/runner/work/mario/mario/assets/smb_breakblock.wav", "start": 4560789, "end": 4585879, "audio": 1}, {"filename": "/home/runner/work/mario/mario/assets/smb_bump.wav", "start": 4585879, "end": 4596305, "audio": 1}, {"filename": "/home/runner/work/mario/mario/assets/smb_coin.wav", "start": 4596305, "end": 4638959, "audio": 1}, {"filename": "/home/runner/work/mario/mario/assets/smb_gameover.wav", "start": 4638959, "end": 4806367, "audio": 1}, {"filename": "/home/runner/work/mario/mario/assets/smb_jump-small.wav", "start": 4806367, "end": 4833349, "audio": 1}, {"filename": "/home/runner/work/mario/mario/assets/smb_kick.wav", "start": 4833349, "end": 4842297, "audio": 1}, {"filename": "/home/runner/work/mario/mario/assets/smb_mariodie.wav", "start": 4842297, "end": 4962867, "audio": 1}, {"filename": "/home/runner/work/mario/mario/assets/smb_pipe.wav", "start": 4962867, "end": 4998405, "audio": 1}, {"filename": "/home/runner/work/mario/mario/assets/smb_stage_clear.wav", "start": 4998405, "end": 5248153, "audio": 1}, {"filename": "/home/runner/work/mario/mario/assets/smb_stomp.wav", "start": 5248153, "end": 5261223, "audio": 1}], "remote_package_size": 5261223});
+    loadPackage({"files": [{"filename": "/assets/Ac437_IBM_VGA_8x16.ttf", "start": 0, "end": 25824}, {"filename": "/assets/NES - Super Mario Bros - Enemies & Bosses.png", "start": 25824, "end": 75136}, {"filename": "/assets/NES - Super Mario Bros - Mario & Luigi.png", "start": 75136, "end": 149241}, {"filename": "/assets/NES - Super Mario Bros - Tileset.png", "start": 149241, "end": 225019}, {"filename": "/assets/button_right.png", "start": 225019, "end": 246379}, {"filename": "/assets/button_up.png", "start": 246379, "end": 267663}, {"filename": "/assets/button_up.xcf", "start": 267663, "end": 451162}, {"filename": "/assets/button_up_2.xcf", "start": 451162, "end": 960257}, {"filename": "/assets/lets-a-go.wav", "start": 960257, "end": 1037465, "audio": 1}, {"filename": "/assets/mk64_mario01.wav", "start": 1037465, "end": 1117945, "audio": 1}, {"filename": "/assets/music.mp3", "start": 1117945, "end": 4513396, "audio": 1}, {"filename": "/assets/numbers.png", "start": 4513396, "end": 4515981}, {"filename": "/assets/numbers.xcf", "start": 4515981, "end": 4535989}, {"filename": "/assets/numbers_eight.xcf", "start": 4535989, "end": 4538257}, {"filename": "/assets/numbers_five.xcf", "start": 4538257, "end": 4540397}, {"filename": "/assets/numbers_four.xcf", "start": 4540397, "end": 4542684}, {"filename": "/assets/numbers_nine.xcf", "start": 4542684, "end": 4544889}, {"filename": "/assets/numbers_one.xcf", "start": 4544889, "end": 4547029}, {"filename": "/assets/numbers_seven.xcf", "start": 4547029, "end": 4549189}, {"filename": "/assets/numbers_six.xcf", "start": 4549189, "end": 4551369}, {"filename": "/assets/numbers_three.xcf", "start": 4551369, "end": 4553597}, {"filename": "/assets/numbers_three_2.xcf", "start": 4553597, "end": 4556288}, {"filename": "/assets/numbers_two.xcf", "start": 4556288, "end": 4558447}, {"filename": "/assets/numbers_zero.xcf", "start": 4558447, "end": 4560789}, {"filename": "/assets/smb_breakblock.wav", "start": 4560789, "end": 4585879, "audio": 1}, {"filename": "/assets/smb_bump.wav", "start": 4585879, "end": 4596305, "audio": 1}, {"filename": "/assets/smb_coin.wav", "start": 4596305, "end": 4638959, "audio": 1}, {"filename": "/assets/smb_gameover.wav", "start": 4638959, "end": 4806367, "audio": 1}, {"filename": "/assets/smb_jump-small.wav", "start": 4806367, "end": 4833349, "audio": 1}, {"filename": "/assets/smb_kick.wav", "start": 4833349, "end": 4842297, "audio": 1}, {"filename": "/assets/smb_mariodie.wav", "start": 4842297, "end": 4962867, "audio": 1}, {"filename": "/assets/smb_pipe.wav", "start": 4962867, "end": 4998405, "audio": 1}, {"filename": "/assets/smb_stage_clear.wav", "start": 4998405, "end": 5248153, "audio": 1}, {"filename": "/assets/smb_stomp.wav", "start": 5248153, "end": 5261223, "audio": 1}], "remote_package_size": 5261223});
 
   })();
 
-// end include: /tmp/tmp8yqmndjr.js
-// include: /tmp/tmpjnm2xxgc.js
+// end include: /tmp/tmp516b0qd0.js
+// include: /tmp/tmpalmrhab4.js
 
     // All the pre-js content up to here must remain later on, we need to run
     // it.
     if (Module['$ww'] || (typeof ENVIRONMENT_IS_PTHREAD != 'undefined' && ENVIRONMENT_IS_PTHREAD)) Module['preRun'] = [];
     var necessaryPreJSTasks = Module['preRun'].slice();
-  // end include: /tmp/tmpjnm2xxgc.js
-// include: /tmp/tmp3g8bm7ar.js
+  // end include: /tmp/tmpalmrhab4.js
+// include: /tmp/tmptftje0vq.js
 
     if (!Module['preRun']) throw 'Module.preRun should exist because file support used it; did a pre-js delete it?';
     necessaryPreJSTasks.forEach((task) => {
       if (Module['preRun'].indexOf(task) < 0) throw 'All preRun tasks that exist before user pre-js code should remain after; did you replace Module or modify Module.preRun?';
     });
-  // end include: /tmp/tmp3g8bm7ar.js
+  // end include: /tmp/tmptftje0vq.js
 
 
 // Sometimes an existing Module object exists with properties
